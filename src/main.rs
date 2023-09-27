@@ -1,4 +1,4 @@
-pub mod day_four;
+mod day_five;
 
 use std::fs;
 
@@ -9,6 +9,6 @@ fn main() {
     let mut contents: Vec<&str> = file.split("\n").collect();
     contents.pop();
     // println!("{:?}", contents);
-    let solution = day_four::solution::part2(contents);
+    let solution = day_five::solution::part1(contents);
     println!("{:?}", solution);
 }
